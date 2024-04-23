@@ -4,6 +4,8 @@ import Home from './home';
 import Blog from './components/blog';
 import Login from './components/login';
 import Error from './components/error';
+import Precos from './components/precos';
+
 
 
 
@@ -21,6 +23,8 @@ function App() {
       <Route path='/blog' element={<Blog />} />
       <Route path='/login' element={<Login />} />
       <Route path='/error' element={<Error />} />
+      <Route path='/servicos' element={<Precos />} />
+
 
 
     </Routes>

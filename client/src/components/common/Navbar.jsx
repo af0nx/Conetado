@@ -14,25 +14,31 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       <div className="flex items-center">
+      <a href="/"> 
         <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-700 to-green-50">Conetado</h1>
+        </a>        
+
         <div className="navbar-logo mr-4">
-          {/* Usando a tag <img> para exibir a imagem */}
-          <img src={logoImg} alt="Logo" className="h-14 pl-2	" />
-        </div>
+
+          <a href="/">
+  <img src={logoImg} alt="Logo" className="h-14 pl-2" />
+</a>        
+
+</div>
       </div>
 
       <ul className="hidden md:flex">
         <li className="p-4">
           <a href="/blog">Blog</a>
+        </li> 
+        <li className="p-4">
+          <a href="/servicos">Serviços</a>
         </li>
         <li className="p-4">
-          <a href="/recursos">Recursos</a>
+          <a href="/parceiros">Parceiros</a>
         </li>
         <li className="p-4">
-          <a href="/automacao">Automação de AI</a>
-        </li>
-        <li className="p-4">
-          <a href="/automacao">Serviços</a>
+          <a href="/servicos">Login</a>
         </li>
       </ul>
 

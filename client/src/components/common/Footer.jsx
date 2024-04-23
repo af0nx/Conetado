@@ -7,10 +7,14 @@ const Footer = () => {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
         <div className="flex items-center">
+        <a href="/"> 
         <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-700 to-green-50">Conetado</h1>
+        </a>
+
         <div className="navbar-logo mr-4">
-          {/* Usando a tag <img> para exibir a imagem */}
+          <a href="/"> 
           <img src={logoImg} alt="Logo" className="h-14 pl-2	" />
+          </a>
         </div>
         </div>   
 
@@ -20,23 +24,25 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Suporte</h6>
         <ul>
-            <li className='py-2 text-sm'>FAQ</li>
-            <li className='py-2 text-sm'>Ajuda</li>
+            <li className='py-2 text-sm'><a href="/faq">FAQ</a></li>
+            <li className='py-2 text-sm'><a href="/servicos">Ajuda</a></li>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Conetado</h6>
         <ul>
-            <li className='py-2 text-sm'>Sobre</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Preços</li>
+            <li className='py-2 text-sm'><a href="/sobre">Sobre</a></li>
+            <li className='py-2 text-sm'><a href="/blog">Blog</a></li>
+            <li className='py-2 text-sm'><a href="/servicos">Serviços</a></li>
+            <li className='py-2 text-sm'><a href="/parceiros">Parceiros</a></li>
+
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
-            <li className='py-2 text-sm'>Termos e Condições</li>
-            <li className='py-2 text-sm'>Termos de Serviços</li>
+            <li className='py-2 text-sm'><a href="/termosecondicoes">Termos e Condições</a></li>
+            <li className='py-2 text-sm'><a href="/termosdeservicos">Teros de Serviços</a></li>
         </ul>
     </div>
       </div>
