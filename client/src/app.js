@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 import Home from './home';
+import Blog from './components/blog';
+import Login from './components/login';
+import Error from './components/error';
+
+
 
 function App() {
   useEffect(() => {
@@ -13,6 +18,10 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/blog' element={<Blog />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/error' element={<Error />} />
+
 
     </Routes>
   );

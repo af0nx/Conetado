@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       <div className="flex items-center">
-        <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-700 to-green-50">MadeiraCoin</h1>
+        <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-700 to-green-50">Conetado</h1>
         <div className="navbar-logo mr-4">
           {/* Usando a tag <img> para exibir a imagem */}
           <img src={logoImg} alt="Logo" className="h-14 pl-2	" />
@@ -23,19 +23,16 @@ const Navbar = () => {
 
       <ul className="hidden md:flex">
         <li className="p-4">
-          <a href="/empresa">Empresa</a>
+          <a href="/blog">Blog</a>
         </li>
         <li className="p-4">
-          <a href="/mercado">Mercado</a>
+          <a href="/recursos">Recursos</a>
         </li>
         <li className="p-4">
-          <a href="/sobre">Sobre</a>
+          <a href="/automacao">Automação de AI</a>
         </li>
         <li className="p-4">
-          <a href="/atualizacoes">Atualizações</a>
-        </li>
-        <li className="p-4">
-          <a href="/login">Login</a>
+          <a href="/automacao">Serviços</a>
         </li>
       </ul>
 

@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from './common/Navbar';
-import Logins from './others/login';
+import Errors from './others/error';
 import Footer from './common/Footer';
 
 
-function Login() {
+function Error() {
   return (
     <div className="bg-gray-900">
       <Navbar />
-      <Logins />
+      <Errors />
       <Footer />
     </div>
   );
 }
 
-export default Login;
+export default Error;

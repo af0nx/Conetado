@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from './common/Navbar';
-import Logins from './others/login';
+import Blog from './others/blog';
 import Footer from './common/Footer';
 
 
-function Login() {
+function Sobre() {
   return (
     <div className="bg-gray-900">
       <Navbar />
-      <Logins />
+      <Blog />
       <Footer />
     </div>
   );
 }
 
-export default Login;
+export default Sobre;
