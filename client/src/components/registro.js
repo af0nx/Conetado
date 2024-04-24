@@ -4,7 +4,7 @@ import Registers from './others/register';
 import Footer from './common/Footer';
 
 
-function Login() {
+function Register() {
   return (
     <div className="bg-gray-900">
       <Navbar />
@@ -14,4 +14,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

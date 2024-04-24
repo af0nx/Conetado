@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Home from './home';
 import Blog from './components/blog';
 import Login from './components/login';
@@ -12,14 +12,10 @@ import Register from "./components/registro";
 
 
 function App() {
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => console.log(data.message))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  
 
   return (
+
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/blog' element={<Blog />} />
@@ -28,11 +24,6 @@ function App() {
       <Route path='/servicos' element={<Precos />} />
       <Route path='/parceiros' element={<Parceiro />} />
       <Route path='/registro' element={<Register />} />
-
-
-
-
-
     </Routes>
   );
 }
