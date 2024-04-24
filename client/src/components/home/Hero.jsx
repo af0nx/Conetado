@@ -40,74 +40,74 @@ const Hero = () => {
       </div>
 
       <div className="bg-gray-900">
-        <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
-          <div class="relative">
-            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
+        <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
+          <div className="relative">
+            <p className="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
               Add some nice touches to your interface with our latest designs,
               components, and templates. We've crafted a beautiful user
               experience that your visitors will love.{" "}
             </p>
           </div>
-          <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
+            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
-                class="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl"
                 src="https://cdn.devdojo.com/images/december2020/dashboard-011.png"
                 alt=""
               ></img>
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-              <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
+            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
+              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
                 Drag-n-drop design
               </p>
-              <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">
+              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
                 Design Made Easy
               </h3>
-              <p class="mt-5 text-lg text-gray-700 text md:text-left">
+              <p className="mt-5 text-lg text-gray-700 text md:text-left">
                 Crafting your user experience has never been easier, with our
                 intuitive drag'n drop interface you will be creating beatiful
                 designs in no time.
               </p>
             </div>
           </div>
-          <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
+          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
+            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
               <img
-                class="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl"
                 src="https://cdn.devdojo.com/images/december2020/dashboard-04.png"
                 alt=""
               ></img>
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
-              <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
+            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
+              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
                 know your data
               </p>
-              <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">
+              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
                 Optimized For Conversions
               </h3>
-              <p class="mt-5 text-lg text-gray-700 text md:text-left">
+              <p className="mt-5 text-lg text-gray-700 text md:text-left">
                 Backed by data, these templates have been crafted for ultimate
                 optimization. Now, converting your visitors into customers is
                 easier than ever before.
               </p>
             </div>
           </div>
-          <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
+            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
-                class="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl"
                 src="https://cdn.devdojo.com/images/december2020/dashboard-03.png"
                 alt=""
               ></img>
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-              <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
+            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
+              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
                 Easy to customize
               </p>
-              <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">
+              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
                 Make It Your Own
               </h3>
-              <p class="mt-5 text-lg text-gray-700 text md:text-left">
+              <p className="mt-5 text-lg text-gray-700 text md:text-left">
                 All templates and components are fully customizable. You can use
                 these templates to tell your personal story and convey your
                 message.
@@ -117,30 +117,30 @@ const Hero = () => {
         </div>
       </div>
 
-      <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
-        <div class=" md:p-20 p-7 flex flex-col md:flex-row justify-center items-center md:items-start">
-          <p class=" md:text-5xl sm:text-4xl text-3xl font-bold md:p-12 p-4 text-center md:text-left">
-            <span class="text-gray-500">Vantagens de </span>
-            <span class="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-cyan-600">
+      <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <div className=" md:p-20 p-7 flex flex-col md:flex-row justify-center items-center md:items-start">
+          <p className=" md:text-5xl sm:text-4xl text-3xl font-bold md:p-12 p-4 text-center md:text-left">
+            <span className="text-gray-500">Vantagens de </span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-cyan-600">
               Leitura
             </span>
           </p>
         </div>
-        <div class="w-full ">
-          <div class="flex flex-col w-full mb-10 sm:flex-row">
-            <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-              <div class="relative h-full ml-0 mr-0 sm:mr-10">
-                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
-                <div class="relative h-full p-5 bg-gray-900 border-2 border-indigo-500 rounded-lg">
-                  <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-50">
+        <div className="w-full ">
+          <div className="flex flex-col w-full mb-10 sm:flex-row">
+            <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
+                <div className="relative h-full p-5 bg-gray-900 border-2 border-indigo-500 rounded-lg">
+                  <div className="flex items-center -mt-1">
+                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-50">
                       Visão geral da indústria
                     </h3>
                   </div>
-                  <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">
+                  <p className="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">
                     ------------
                   </p>
-                  <p class="mb-2 text-gray-500">
+                  <p className="mb-2 text-gray-500">
                     Blogs de IA muitas vezes cobrem notícias e eventos
                     importantes na indústria de tecnologia e IA. Isto pode
                     ajudar-te a entender o panorama geral e as tendências de
@@ -149,19 +149,19 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div class="w-full sm:w-1/2">
-              <div class="relative h-full ml-0 md:mr-10">
-                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
-                <div class="relative h-full p-5 bg-gray-900 border-2 border-purple-500 rounded-lg">
-                  <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-50">
+            <div className="w-full sm:w-1/2">
+              <div className="relative h-full ml-0 md:mr-10">
+                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
+                <div className="relative h-full p-5 bg-gray-900 border-2 border-purple-500 rounded-lg">
+                  <div className="flex items-center -mt-1">
+                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-50">
                       Atualizações sobre as últimas tendências
                     </h3>
                   </div>
-                  <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">
+                  <p className="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">
                     ------------
                   </p>
-                  <p class="mb-2 text-gray-500">
+                  <p className="mb-2 text-gray-500">
                     Os blogs de IA geralmente cobrem as últimas pesquisas,
                     desenvolvimentos e tendências no campo. Isso permite que
                     fiques atualizado com as mais recentes inovações e avanços.
@@ -170,20 +170,20 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div class="flex flex-col w-full mb-5 sm:flex-row">
-            <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-              <div class="relative h-full ml-0 mr-0 sm:mr-10">
-                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
-                <div class="relative h-full p-5 bg-gray-900 border-2 border-blue-400 rounded-lg">
-                  <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-50">
+          <div className="flex flex-col w-full mb-5 sm:flex-row">
+            <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
+                <div className="relative h-full p-5 bg-gray-900 border-2 border-blue-400 rounded-lg">
+                  <div className="flex items-center -mt-1">
+                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-50">
                       Aprendizagem contínua
                     </h3>
                   </div>
-                  <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">
+                  <p className="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">
                     ------------
                   </p>
-                  <p class="mb-2 text-gray-500">
+                  <p className="mb-2 text-gray-500">
                     Estes blogs muitas vezes oferecem insights detalhados sobre
                     algoritmos, técnicas de aprendizagem de máquina, redes
                     neurais e outras áreas relacionadas com IA. Ao leres
@@ -193,19 +193,19 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-              <div class="relative h-full ml-0 mr-0 sm:mr-10">
-                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
-                <div class="relative h-full p-5 bg-gray-900 border-2 border-yellow-400 rounded-lg">
-                  <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-50">
+            <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+                <div className="relative h-full p-5 bg-gray-900 border-2 border-yellow-400 rounded-lg">
+                  <div className="flex items-center -mt-1">
+                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-50">
                       Partilha de melhores práticas
                     </h3>
                   </div>
-                  <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">
+                  <p className="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">
                     ------------
                   </p>
-                  <p class="mb-2 text-gray-500">
+                  <p className="mb-2 text-gray-500">
                     Profissionais experientes muitas vezes partilham as suas
                     melhores práticas, dicas e truques em blogs de IA. Isto pode
                     ajudar-te a evitar armadilhas comuns e aprimorar as tuas
@@ -214,19 +214,19 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div class="w-full sm:w-1/2">
-              <div class="relative h-full ml-0 md:mr-10">
-                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
-                <div class="relative h-full p-5 bg-gray-900 border-2 border-green-500 rounded-lg">
-                  <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-50">
+            <div className="w-full sm:w-1/2">
+              <div className="relative h-full ml-0 md:mr-10">
+                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
+                <div className="relative h-full p-5 bg-gray-900 border-2 border-green-500 rounded-lg">
+                  <div className="flex items-center -mt-1">
+                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-50">
                       Inspiração
                     </h3>
                   </div>
-                  <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">
+                  <p className="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">
                     ------------
                   </p>
-                  <p class="mb-2 text-gray-500">
+                  <p className="mb-2 text-gray-500">
                     Ler sobre os avanços emocionantes e os projetos inovadores
                     em IA pode inspirar novas ideias e abordagens para os teus
                     próprios projetos e pesquisas.
@@ -237,9 +237,9 @@ const Hero = () => {
           </div>
 
           <section>
-            <div class="py-16">
-              <div class="mx-auto px-6 max-w-6xl text-gray-500">
-                <div class="text-center">
+            <div className="py-16">
+              <div className="mx-auto px-6 max-w-6xl text-gray-500">
+                <div className="text-center">
                   <div className="w-full  max-w-[800px] mx-auto text-center flex flex-col justify-center  ">
                     <p className="md:text-5xl  text-4xl font-bold md:p-9 p-5  bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-cyan-600 ">
                       Parceiros
@@ -250,16 +250,16 @@ const Hero = () => {
     Alguns dos nossos parceiros podem ser encontrados <a href="/parceiros" className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-cyan-600">aqui</a></p>
 
                 </div>
-                <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  <div class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+                <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  <div className="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
                     <div
                       aria-hidden="true"
-                      class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-blue-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
+                      className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-blue-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
                     ></div>
-                    <div class="relative">
-                      <div class="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                    <div className="relative">
+                      <div className="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                         <svg
-                          class="text-[#000014] dark:text-white"
+                          className="text-[#000014] dark:text-white"
                           xmlns="http://www.w3.org/2000/svg"
                           width="1em"
                           height="1em"
@@ -310,18 +310,18 @@ const Hero = () => {
                         </svg>
                       </div>
 
-                      <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                        <p class="text-gray-700 dark:text-gray-300">
+                      <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                        <p className="text-gray-700 dark:text-gray-300">
                           Amet praesentium deserunt ex commodi tempore fuga
                           voluptatem. Sit, sapiente.
                         </p>
                       </div>
 
-                      <div class="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
+                      <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
                           href="#"
                           download="/"
-                          class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
+                          className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
                           <span>Download</span>
                           <svg
@@ -346,14 +346,14 @@ const Hero = () => {
                   </div>
                   <div
                     href="#"
-                    class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900"
+                    className="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900"
                   >
                     <div
                       aria-hidden="true"
-                      class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-green-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
+                      className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-green-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
                     ></div>
-                    <div class="relative">
-                      <div class="border border-green-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                    <div className="relative">
+                      <div className="border border-green-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="0.98em"
@@ -398,18 +398,18 @@ const Hero = () => {
                         </svg>
                       </div>
 
-                      <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                        <p class="text-gray-700 dark:text-gray-300">
+                      <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                        <p className="text-gray-700 dark:text-gray-300">
                           Amet praesentium deserunt ex commodi tempore fuga
                           voluptatem. Sit, sapiente.
                         </p>
                       </div>
 
-                      <div class="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
+                      <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
                           href="#"
                           download="/"
-                          class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
+                          className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
                           <span>Download</span>
                           <svg
@@ -432,13 +432,13 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+                  <div className="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
                     <div
                       aria-hidden="true"
-                      class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-red-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
+                      className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-red-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
                     ></div>
-                    <div class="relative">
-                      <div class="border border-red-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-red-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                    <div className="relative">
+                      <div className="border border-red-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-red-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="0.95em"
@@ -486,17 +486,17 @@ const Hero = () => {
                         </svg>
                       </div>
 
-                      <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                        <p class="text-gray-700 dark:text-gray-300">
+                      <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                        <p className="text-gray-700 dark:text-gray-300">
                           Amet praesentium deserunt ex commodi tempore fuga
                           voluptatem. Sit, sapiente.
                         </p>
                       </div>
-                      <div class="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
+                      <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
                           href="#"
                           download="/"
-                          class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
+                          className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
                           <span>Download</span>
                           <svg
