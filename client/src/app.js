@@ -6,6 +6,7 @@ import Login from './components/login';
 import Error from './components/error';
 import Precos from './components/precos';
 import Parceiro from "./components/parceiros";
+import Register from "./components/registro";
 
 
 
@@ -26,6 +27,8 @@ function App() {
       <Route path='/error' element={<Error />} />
       <Route path='/servicos' element={<Precos />} />
       <Route path='/parceiros' element={<Parceiro />} />
+      <Route path='/registro' element={<Register />} />
+
 
 
 

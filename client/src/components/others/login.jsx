@@ -1,28 +1,41 @@
 const Login = () => {
 
     return (
-        <div class="bg-white">
-«          <div class="flex h-screen flex-col items-center justify-center">
-            <div class="max-h-auto mx-auto max-w-xl">
-              <div class="mb-8 space-y-3">
-                <p class="text-xl font-semibold">Login</p>
-                <p class="text-gray-500">Enter your email, and we'll send a code to your inbox. <br />No need for passwords -- like magic!</p>
-              </div>
-              <form class="w-full">
-                <div class="mb-10 space-y-3">
-                  <div class="space-y-1">
-                    <div class="space-y-2">
-                      <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="email">Email</label>
-                      <input class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 w-full rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" id="email" placeholder="mail@example.com" name="email" />
-                    </div>
-                  </div>
-                  <button class="ring-offset-background focus-visible:ring-ring flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-black/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50" type="submit">Login</button>
-                </div>
-              </form>
-              <div class="text-center"> No account? <a class="text-blue-500" href="/signup">Create one</a> </div>
-            </div>
+      <div class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div class="px-6 py-4">
+          <div class="flex justify-center mx-auto">
+              <img class="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt=""></img>
           </div>
-        </div>
+  
+          <h3 class="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">Welcome Back</h3>
+  
+          <p class="mt-1 text-center text-gray-500 dark:text-gray-400">Login or create account</p>
+  
+          <form>
+              <div class="w-full mt-4">
+                  <input class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="email" placeholder="Email Address" aria-label="Email Address" />
+              </div>
+  
+              <div class="w-full mt-4">
+                  <input class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" aria-label="Password" />
+              </div>
+  
+              <div class="flex items-center justify-between mt-4">
+                  <a href="#" class="text-sm text-gray-600 dark:text-gray-200 hover:text-gray-500">Forget Password?</a>
+  
+                  <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                      Sign In
+                  </button>
+              </div>
+          </form>
+      </div>
+  
+      <div class="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700">
+          <span class="text-sm text-gray-600 dark:text-gray-200">Don't have an account? </span>
+  
+          <a href="#" class="mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline">Register</a>
+      </div>
+  </div>
     );
   };
   
