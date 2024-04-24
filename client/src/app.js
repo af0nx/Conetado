@@ -5,6 +5,7 @@ import Blog from './components/blog';
 import Login from './components/login';
 import Error from './components/error';
 import Precos from './components/precos';
+import Parceiro from "./components/parceiros";
 
 
 
@@ -24,6 +25,8 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/error' element={<Error />} />
       <Route path='/servicos' element={<Precos />} />
+      <Route path='/parceiros' element={<Parceiro />} />
+
 
 
 

@@ -53,7 +53,7 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#097969] m-4">
-          MadeiraCoin
+          Conetado
         </h1>
         <li className="p-4 border-b border-gray-600">
           <a href="/empresa">Empresa</a>
