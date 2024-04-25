@@ -1,31 +1,44 @@
 import axios from 'axios'; 
-import {Link} from "react-router-dom";
 import { useState } from "react";
-import api from '../../api'; // Import the Axios configuration
 
 const Register = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-  
+
+
     const handleOnSubmit = async (e) => {
-      e.preventDefault();
-      try {
-        const response = await api.post(
-          'http://localhost:3000/registro',
-          { name, email, password },
-          { headers: { 'Content-Type': 'application/json' } }
-        );
-        console.log(response.data);
-        alert("Data saved successfully");
-        setName("");
-        setEmail("");
-        setPassword("");
-      } catch (error) {
-        console.error('Error:', error);
-        alert("Failed to save data");
-      }
+        e.preventDefault();
+        try {
+            const response = await axios.post(
+                'http://localhost:3000/register', // Rota de registro agora está no diretório raiz
+                { name, email, password },
+                { headers: { 'Content-Type': 'application/json' } }
+            );
+            console.log(response.data);
+            alert("Data saved successfully");
+            setName("");
+            setEmail("");
+            setPassword("");
+        } catch (error) {
+            console.error('Error:', error);
+            if (error.response) {
+                switch (error.response.status) {
+                    case 400:
+                        alert("Missing required fields");
+                        break;
+                    case 409:
+                        alert("Email already exists");
+                        break;
+                    default:
+                        alert("Something went wrong");
+                }
+            } else {
+                alert("Network error");
+            }
+        }
     };
+      
     return (
       <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="px-6 py-4">
