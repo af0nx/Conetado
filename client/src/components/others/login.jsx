@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import axios from 'axios'; 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Importe useNavigate
 import logoImg from "../images/logo.png";
 
 const Logins = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Obtenha a função de navegação
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:3000/auth/login',
+        'http://localhost:3000/auth/login', // Endpoint para login de usuário
         { email, password },
         { headers: { 'Content-Type': 'application/json' } }
       );
       console.log(response.data);
+      // Use navigate para redirecionar o usuário para outra página
       navigate('/');
     } catch (error) {
       console.error('Erro:', error);
@@ -35,14 +36,6 @@ const Logins = () => {
       } else {
         setError("Erro de rede.");
       }
-    }
-  };
-
-  const handleGoogleLogin = async () => {
-    try {
-      window.location.href = 'URL_DO_SEU_ENDPOINT_GOOGLE_OAUTH';
-    } catch (error) {
-      console.error('Erro ao iniciar login com Google:', error);
     }
   };
 
@@ -89,15 +82,6 @@ const Logins = () => {
             </button>
           </div>
         </form>
-
-        <div className="flex justify-center mt-4">
-          <button
-            className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-500 rounded-lg hover:bg-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-50"
-            onClick={handleGoogleLogin}
-          >
-            Login com Google
-          </button>
-        </div>
       </div>
 
       <div className="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700">
