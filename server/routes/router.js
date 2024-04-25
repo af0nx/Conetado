@@ -113,31 +113,22 @@ router.post('/reset-password/:token', async (req, res) => {
     const { newPassword } = req.body;
 
     try {
-        // Encontre o usuário com base no token
-        const user = await User.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
-        if (!token) {
-            return res.status(400).json({ message: 'Token inválidooooooooooooooooooooooooooooo' });
-        }
+        // Find user by reset token
+        const user = await User.findOne({ resetPasswordToken: token });
         if (!user) {
-            return res.status(400).json({ message: 'Token inválido ou expirado' });
+            return res.status(400).json({ message: 'Token inválido ou expirado.' });
         }
 
-        // Criptografe a nova senha
+        // Update user's password with the new one
         const hashedPassword = await bcrypt.hash(newPassword, 10);
-
-        // Atualize a senha do usuário
         user.password = hashedPassword;
         user.resetPasswordToken = undefined;
         user.resetPasswordExpires = undefined;
-
-        // Salve as alterações no banco de dados
         await user.save();
 
-        // Responda com uma mensagem de sucesso
-        res.status(200).json({ message: 'Senha redefinida com sucesso' });
+        res.status(200).json({ message: 'Senha redefinida com sucesso.' });
     } catch (error) {
-        console.error('Error:', error);
-        res.status(500).json({ message: 'Ocorreu um erro ao redefinir a senha' });
+        res.status(500).json({ message: 'Ocorreu um erro ao redefinir a senha.', error: error.message });
     }
 });
 
