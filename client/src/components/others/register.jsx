@@ -1,11 +1,12 @@
 import axios from 'axios'; 
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom'; // Importe useNavigate
 
 const Register = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
+    const navigate = useNavigate(); // Obtenha a função de navegação
 
     const handleOnSubmit = async (e) => {
         e.preventDefault();
@@ -20,6 +21,9 @@ const Register = () => {
             setName("");
             setEmail("");
             setPassword("");
+            
+            // Após o registro bem-sucedido, redirecione o usuário para a página de login
+            navigate('/login');
         } catch (error) {
             console.error('Error:', error);
             if (error.response) {
@@ -38,7 +42,7 @@ const Register = () => {
             }
         }
     };
-      
+
     return (
       <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="px-6 py-4">

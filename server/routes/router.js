@@ -33,4 +33,29 @@ router.post('/registro', async (req, res) => {
     }
 });
 
+
+// Rota para login de usuário
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+      // Verifique se o usuário existe no banco de dados
+      const user = await User.findOne({ email });
+      if (!user) {
+          return res.status(404).json({ message: 'Usuário não encontrado.' });
+      }
+
+      // Verifique se a senha está correta
+      const passwordMatch = await bcrypt.compare(password, user.password);
+      if (!passwordMatch) {
+          return res.status(401).json({ message: 'Credenciais inválidas.' });
+      }
+
+      // Se as credenciais estiverem corretas, retorne o usuário
+      res.status(200).json({ user });
+  } catch (error) {
+      res.status(500).json({ message: 'Ocorreu um erro ao fazer login.', error: error.message });
+  }
+});
+
 module.exports = router;
