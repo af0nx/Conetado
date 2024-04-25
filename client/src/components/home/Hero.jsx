@@ -275,8 +275,8 @@ const Hero = () => {
                               gradientTransform="scale(.1)"
                               gradientUnits="userSpaceOnUse"
                             >
-                              <stop offset="0" stop-color="currentColor"></stop>
-                              <stop offset="1" stop-color="currentColor"></stop>
+                              <stop offset="0" stopColor="currentColor"></stop>
+                              <stop offset="1" stopColor="currentColor"></stop>
                             </linearGradient>
                             <linearGradient
                               id="deviconAstro1"
@@ -287,11 +287,11 @@ const Hero = () => {
                               gradientTransform="scale(.1)"
                               gradientUnits="userSpaceOnUse"
                             >
-                              <stop offset="0" stop-color="#ff1639"></stop>
+                              <stop offset="0" stopColor="#ff1639"></stop>
                               <stop
                                 offset="1"
-                                stop-color="#ff1639"
-                                stop-opacity="0"
+                                stopColor="#ff1639"
+                                stopOpacity="0"
                               ></stop>
                             </linearGradient>
                           </defs>
@@ -333,9 +333,9 @@ const Hero = () => {
                             <path
                               fill="none"
                               stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="m17 13l-5 5m0 0l-5-5m5 5V6"
                             ></path>
                           </svg>
@@ -368,8 +368,8 @@ const Hero = () => {
                               y1="20.687%"
                               y2="44.071%"
                             >
-                              <stop offset="0%" stop-color="#249361"></stop>
-                              <stop offset="100%" stop-color="#3ecf8e"></stop>
+                              <stop offset="0%" stopColor="#249361"></stop>
+                              <stop offset="100%" stopColor="#3ecf8e"></stop>
                             </linearGradient>
                             <linearGradient
                               id="logosSupabaseIcon1"
@@ -379,7 +379,7 @@ const Hero = () => {
                               y2="34.708%"
                             >
                               <stop offset="0%"></stop>
-                              <stop offset="100%" stop-opacity="0"></stop>
+                              <stop offset="100%" stopOpacity="0"></stop>
                             </linearGradient>
                           </defs>
                           <path
@@ -388,7 +388,7 @@ const Hero = () => {
                           ></path>
                           <path
                             fill="url(#logosSupabaseIcon1)"
-                            fill-opacity="0.2"
+                            fillOpacity="0.2"
                             d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"
                           ></path>
                           <path
@@ -421,9 +421,9 @@ const Hero = () => {
                             <path
                               fill="none"
                               stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="m17 13l-5 5m0 0l-5-5m5 5V6"
                             ></path>
                           </svg>
@@ -453,12 +453,12 @@ const Hero = () => {
                               y1="90.929%"
                               y2="55.184%"
                             >
-                              <stop offset="0%" stop-color="#e40035"></stop>
-                              <stop offset="24%" stop-color="#f60a48"></stop>
-                              <stop offset="35.2%" stop-color="#f20755"></stop>
-                              <stop offset="49.4%" stop-color="#dc087d"></stop>
-                              <stop offset="74.5%" stop-color="#9717e7"></stop>
-                              <stop offset="100%" stop-color="#6c00f5"></stop>
+                              <stop offset="0%" stopColor="#e40035"></stop>
+                              <stop offset="24%" stopColor="#f60a48"></stop>
+                              <stop offset="35.2%" stopColor="#f20755"></stop>
+                              <stop offset="49.4%" stopColor="#dc087d"></stop>
+                              <stop offset="74.5%" stopColor="#9717e7"></stop>
+                              <stop offset="100%" stopColor="#6c00f5"></stop>
                             </linearGradient>
                             <linearGradient
                               id="logosAngularIcon1"
@@ -467,11 +467,11 @@ const Hero = () => {
                               y1="12.058%"
                               y2="68.21%"
                             >
-                              <stop offset="0%" stop-color="#ff31d9"></stop>
+                              <stop offset="0%" stopColor="#ff31d9"></stop>
                               <stop
                                 offset="100%"
-                                stop-color="#ff5be1"
-                                stop-opacity="0"
+                                stopColor="#ff5be1"
+                                stopOpacity="0"
                               ></stop>
                             </linearGradient>
                           </defs>
@@ -508,9 +508,9 @@ const Hero = () => {
                             <path
                               fill="none"
                               stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="m17 13l-5 5m0 0l-5-5m5 5V6"
                             ></path>
                           </svg>

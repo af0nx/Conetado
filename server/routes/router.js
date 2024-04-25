@@ -78,7 +78,7 @@ router.post('/forgot-password', async (req, res) => {
 
         // Salve o token no banco de dados junto com a data de expiração
         user.resetPasswordToken = token;
-        user.resetPasswordExpires = Date.now() + 7200000; // 1 hora
+        user.resetPasswordExpires = Date.now() + 7200000; // 2 horas
         await user.save();
 
         // Envie um email para o usuário contendo um link para a página de redefinição de senha
