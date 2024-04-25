@@ -7,6 +7,10 @@ import Error from './components/error';
 import Precos from './components/precos';
 import Parceiro from "./components/parceiros";
 import Register from "./components/registro";
+import Password from "./components/password";
+import ResetPassword from "./components/resetpassword";
+
+
 
 
 
@@ -24,6 +28,10 @@ function App() {
       <Route path='/servicos' element={<Precos />} />
       <Route path='/parceiros' element={<Parceiro />} />
       <Route path='/registro' element={<Register />} />
+      <Route path='/password' element={<Password />} />
+      <Route path="/reset-password/:token" element={<ResetPassword />} />
+
+
     </Routes>
   );
 }
