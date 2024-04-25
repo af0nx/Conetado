@@ -1,42 +1,52 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-const ResetPassword = () => {
-  const { token } = useParams();
-  const [newPassword, setNewPassword] = useState('');
-  const [message, setMessage] = useState('');
+const ResetPasswordElement = ({ token }) => {
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [message, setMessage] = useState('');
 
-  const handleOnSubmit = async (e) => {
-    e.preventDefault();
-    try {
-        const response = await axios.post(
-            `http://localhost:3000/auth/reset-password/${token}`,
-            { newPassword },
-            { headers: { 'Content-Type': 'application/json' } }
-        );
-        setMessage(response.data.message);
-    } catch (error) {
-        console.error('Error:', error);
-        setMessage('Failed to reset password');
-    }
-};
-  return (
-    <div>
-      <h2>Reset Password</h2>
-      <form onSubmit={handleOnSubmit}>
-        <input
-          type="password"
-          placeholder="Enter new password"
-          value={newPassword}
-          onChange={(e) => setNewPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Reset Password</button>
-      </form>
-      <p>{message}</p>
-    </div>
-  );
+    const handleResetPassword = async () => {
+        try {
+            // Verifique se as senhas coincidem
+            if (newPassword !== confirmPassword) {
+                setMessage('As senhas não coincidem');
+                return;
+            }
+
+            // Envie uma solicitação POST com a nova senha e o token
+            const response = await axios.post(`http://localhost:3000/auth/reset-password/${token}`, { newPassword });
+            setMessage(response.data.message);
+        } catch (error) {
+            setMessage(error.response.data.message);
+        }
+    };
+
+    return (
+        <div>
+            <h2>Redefinir Senha</h2>
+            <div>
+                <label htmlFor="new-password">Nova Senha:</label>
+                <input
+                    type="password"
+                    id="new-password"
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                />
+            </div>
+            <div>
+                <label htmlFor="confirm-password">Confirmar Nova Senha:</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                />
+            </div>
+            <button onClick={handleResetPassword}>Redefinir Senha</button>
+            {message && <p>{message}</p>}
+        </div>
+    );
 };
 
-export default ResetPassword;
+export default ResetPasswordElement;

@@ -4,6 +4,9 @@ const bcrypt = require('bcrypt');
 const User = require('../models/schemas'); 
 const crypto = require('crypto'); // Para gerar tokens
 const transporter = require('../emailConfig'); //email
+const bodyParser = require('body-parser');
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 // Rota para registro de usuário
 router.post('/registro', async (req, res) => {
@@ -103,10 +106,6 @@ router.post('/forgot-password', async (req, res) => {
     }
 });
 
-router.get('/reset-password/:token', (req, res) => {
-    const { token } = req.params;
-    res.render('reset-password', { token });
-});
 
 
 router.post('/reset-password/:token', async (req, res) => {
@@ -114,26 +113,31 @@ router.post('/reset-password/:token', async (req, res) => {
     const { newPassword } = req.body;
 
     try {
-        // Encontre o usuário com o token de redefinição de senha
-        const user = await User.findOne({
-            resetPasswordToken: token,
-            resetPasswordExpires: { $gt: Date.now() } // Verifique se o token ainda não expirou
-        });
-
+        // Encontre o usuário com base no token
+        const user = await User.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
+        if (!token) {
+            return res.status(400).json({ message: 'Token inválidooooooooooooooooooooooooooooo' });
+        }
         if (!user) {
-            return res.status(400).json({ message: 'Invalid or expired token' });
+            return res.status(400).json({ message: 'Token inválido ou expirado' });
         }
 
+        // Criptografe a nova senha
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+
         // Atualize a senha do usuário
-        user.password = newPassword;
+        user.password = hashedPassword;
         user.resetPasswordToken = undefined;
         user.resetPasswordExpires = undefined;
+
+        // Salve as alterações no banco de dados
         await user.save();
 
-        res.json({ message: 'Password reset successfully' });
+        // Responda com uma mensagem de sucesso
+        res.status(200).json({ message: 'Senha redefinida com sucesso' });
     } catch (error) {
         console.error('Error:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500).json({ message: 'Ocorreu um erro ao redefinir a senha' });
     }
 });
 

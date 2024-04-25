@@ -29,9 +29,7 @@ function App() {
       <Route path='/parceiros' element={<Parceiro />} />
       <Route path='/registro' element={<Register />} />
       <Route path='/password' element={<Password />} />
-      <Route path="/reset-password/:token" element={<ResetPassword />} />
-
-
+      <Route path="/reset-password/:token" element={<ResetPassword/>} />
     </Routes>
   );
 }

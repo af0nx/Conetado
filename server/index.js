@@ -2,13 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./db.js');
 const authRoutes = require('./routes/router'); // Importe as rotas de autenticação
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 connectDB();
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 // Roteamento
 app.use('/auth', authRoutes); // Use as rotas de autenticação no prefixo /auth
 
