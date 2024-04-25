@@ -8,16 +8,16 @@ const ResetPasswordElement = ({ token }) => {
 
     const handleResetPassword = async () => {
         try {
-            // Verifique se as senhas coincidem
             if (newPassword !== confirmPassword) {
                 setMessage('As senhas não coincidem');
                 return;
             }
 
-            // Envie uma solicitação POST com a nova senha e o token
             const response = await axios.post(`http://localhost:3000/auth/reset-password/${token}`, { newPassword });
+            console.log('Response:', response.data);
             setMessage(response.data.message);
         } catch (error) {
+            console.error('Error:', error);
             setMessage(error.response.data.message);
         }
     };
