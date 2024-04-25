@@ -111,10 +111,13 @@ router.post('/forgot-password', async (req, res) => {
 router.post('/reset-password/:token', async (req, res) => {
     const { token } = req.params;
     const { newPassword } = req.body;
+    
+    console.log("Received token:", token); // Log the received token
 
     try {
         // Find user by reset token
         const user = await User.findOne({ resetPasswordToken: token });
+
         if (!user) {
             return res.status(400).json({ message: 'Token inválido ou expirado.' });
         }
