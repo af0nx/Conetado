@@ -10,7 +10,7 @@ app.use(express.json());
 connectDB();
 
 // Roteamento
-app.use('/', authRoutes); // Use as rotas de autenticação no diretório raiz
+app.use('/auth', authRoutes); // Use as rotas de autenticação no prefixo /auth
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {

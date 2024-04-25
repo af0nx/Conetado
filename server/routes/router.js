@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const User = require('../models/schemas'); 
 
 // Rota para registro de usuário
-router.post('/register', async (req, res) => {
+router.post('/registro', async (req, res) => {
     const { name, email, password } = req.body;
 
     try {

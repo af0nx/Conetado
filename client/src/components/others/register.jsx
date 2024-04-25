@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                'http://localhost:3000/register', // Rota de registro agora está no diretório raiz
+                'http://localhost:3000/auth/registro', // Rota de registro agora está no diretório raiz
                 { name, email, password },
                 { headers: { 'Content-Type': 'application/json' } }
             );
