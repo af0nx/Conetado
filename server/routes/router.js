@@ -78,7 +78,7 @@ router.post('/forgot-password', async (req, res) => {
 
         // Salve o token no banco de dados junto com a data de expiração
         user.resetPasswordToken = token;
-        user.resetPasswordExpires = Date.now() + 3600000; // 1 hora
+        user.resetPasswordExpires = Date.now() + 7200000; // 1 hora
         await user.save();
 
         // Envie um email para o usuário contendo um link para a página de redefinição de senha
@@ -117,7 +117,6 @@ router.post('/reset-password/:token', async (req, res) => {
     try {
         // Find user by reset token
         const user = await User.findOne({ resetPasswordToken: token });
-
         if (!user) {
             return res.status(400).json({ message: 'Token inválido ou expirado.' });
         }
