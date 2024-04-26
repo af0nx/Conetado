@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import axios from 'axios'; 
-import { useNavigate } from 'react-router-dom'; // Importe useNavigate
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import logoImg from "../images/logo.png";
+import GoogleLoginButton from './GoogleLoginButton .jsx'; // Importe o componente GoogleLoginButton
 
 const Logins = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate(); // Obtenha a função de navegação
+  const navigate = useNavigate();
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:3000/auth/login', // Endpoint para login de usuário
+        'http://localhost:3000/auth/login',
         { email, password },
         { headers: { 'Content-Type': 'application/json' } }
       );
       console.log(response.data);
-      // Use navigate para redirecionar o usuário para outra página
       navigate('/');
     } catch (error) {
       console.error('Erro:', error);
@@ -73,6 +73,7 @@ const Logins = () => {
           
           <div className="flex items-center justify-between mt-4">
             <a href="/password" className="text-sm text-gray-600 dark:text-gray-200 hover:text-gray-500">Esqueces-te da Password?</a>
+            
 
             <button
               className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
@@ -82,6 +83,9 @@ const Logins = () => {
             </button>
           </div>
         </form>
+                    {/* Adicione o botão de login do Google */}
+            <GoogleLoginButton />
+            
       </div>
 
       <div className="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700">

@@ -7,6 +7,7 @@ const transporter = require('../emailConfig'); //email
 const bodyParser = require('body-parser');
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
+const passport = require('passport');
 
 // Rota para registro de usuário
 router.post('/registro', async (req, res) => {
@@ -134,5 +135,13 @@ router.post('/reset-password/:token', async (req, res) => {
     }
 });
 
+// Rota para iniciar o processo de autenticação
+router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+// Rota para lidar com o redirecionamento após a autenticação
+router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/login' }), (req, res) => {
+  // Redirecione o usuário para a página de destino após a autenticação bem-sucedida
+  res.redirect('http://localhost:3001/'); // Substitua 'http://localhost:3000/minha-pagina' pelo URL real da sua página no frontend
+});
 
 module.exports = router;
