@@ -33,7 +33,16 @@ function App() {
       <Route path='/error' element={<Error />} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path="/reset-password/:token" element={<ResetPassword/>} />
+       
     </Routes>
+
+     // <Route path="/dashboard/perfil" element={<DashboardPerfil />} />
+     // <Route path="/dashboard/servicosai" element={<DashboardServicosAI />} />
+     // <Route path="/dashboard/promocoes" element={<DashboardPromocoes />} />
+     // <Route path="/dashboard/definicoes" element={<DashboardDefinicoes />} />
+
+
+
   );
 }
 
