@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const User = require('../models/schemas'); 
 const crypto = require('crypto'); // Para gerar tokens
@@ -8,6 +9,8 @@ const bodyParser = require('body-parser');
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
 const passport = require('passport');
+const jwtSecret = '35386738962758kfslodsafks536536tg35y6ut879gusd';
+
 
 // Rota para registro de usuário
 router.post('/registro', async (req, res) => {
@@ -56,8 +59,12 @@ router.post('/login', async (req, res) => {
             return res.status(401).json({ message: 'Credenciais inválidas.' });
         }
 
-        // Se as credenciais estiverem corretas, retorne o usuário
-        res.status(200).json({ user });
+        // Gere um token JWT com o ID do usuário e um tempo de expiração
+        const token = jwt.sign({ userId: user._id }, jwtSecret, { expiresIn: '1h' });
+        console.log(token);
+        
+        // Retorne o token junto com os detalhes do usuário
+        res.status(200).json({ user, token });
     } catch (error) {
         res.status(500).json({ message: 'Ocorreu um erro ao fazer login.', error: error.message });
     }

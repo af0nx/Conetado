@@ -14,7 +14,8 @@ const userSchema = new mongoose.Schema({
     googleId: String, // Adicione o ID do Google como um campo opcional
     displayName: String, 
     resetPasswordToken: String,
-    resetPasswordExpires: Date
+    resetPasswordExpires: Date,
+    sessionToken: String // Adicione um campo para armazenar o token de sessão
 });
 
 module.exports = mongoose.model('User', userSchema);

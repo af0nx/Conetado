@@ -9,7 +9,6 @@ const Logins = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false); // Inicialize como falso
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -20,7 +19,7 @@ const Logins = () => {
         { headers: { 'Content-Type': 'application/json' } }
       );
       console.log(response.data);
-      setIsAuthenticated(true); // Atualiza o estado de autenticação para verdadeiro
+      localStorage.setItem('token', response.data.token);
       navigate('/dashboard');
       
     } catch (error) {
