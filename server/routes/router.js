@@ -144,4 +144,6 @@ router.get('/google/callback', passport.authenticate('google', { failureRedirect
   res.redirect('http://localhost:3001/'); // Substitua 'http://localhost:3000/minha-pagina' pelo URL real da sua página no frontend
 });
 
+
+
 module.exports = router;
