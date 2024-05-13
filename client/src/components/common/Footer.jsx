@@ -23,7 +23,7 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Suporte</h6>
         <ul>
-            <li className='py-2 text-sm'><a href="/faq">FAQ</a></li>
+            <li className='py-2 text-sm'><a href="/testeai">Ajuda ChatGPT</a></li>
         </ul>
     </div>
     <div>

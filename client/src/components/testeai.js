@@ -6,7 +6,7 @@ import Footer from './common/Footer';
 
 function Sobre() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 min-h-screen">
       <Navbar />
       <AI />
       <Footer />
