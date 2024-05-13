@@ -42,6 +42,7 @@ router.post('/registro', async (req, res) => {
     }
 });
 
+
 // Rota para login de usuário
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
@@ -69,6 +70,26 @@ router.post('/login', async (req, res) => {
         res.status(500).json({ message: 'Ocorreu um erro ao fazer login.', error: error.message });
     }
 });
+
+router.get('/:userId/name', async (req, res) => {
+    const userId = req.params.userId;
+
+    try {
+        // Busque o usuário no banco de dados pelo ID
+        const user = await User.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+
+        // Retorna o nome do usuário
+        res.status(200).json({ name: user.name });
+    } catch (error) {
+        res.status(500).json({ message: 'Erro ao buscar nome do usuário.', error: error.message });
+    }
+});
+
+
 
 // Rota para esqueceu a senha
 router.post('/forgot-password', async (req, res) => {

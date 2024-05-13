@@ -1,21 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Dashboards = () => {
     const navigate = useNavigate();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [userId, setUserId] = useState(null);
+    const [userName, setUserName] = useState('');
 
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (token) {
-            // Decodifica o token JWT manualmente
+            // Decodifica o token JWT manualmente para obter o ID do usuário
             const tokenParts = token.split('.');
             const payload = JSON.parse(atob(tokenParts[1]));
             const userId = payload.userId;
             console.log(userId); // Exibe o ID do usuário no console
-            setIsAuthenticated(true);
             setUserId(userId);
+            setIsAuthenticated(true);
+            console.log(userName); // Exibe o ID do usuário no console
+
+
+            // Faz uma chamada à API para obter o nome do usuário pelo ID
+            axios.get(`http://localhost:3000/auth/${userId}/name`)
+                .then(response => {
+                    const userName = response.data.name;
+                    setUserName(userName); // Define o nome do usuário no estado
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar nome do usuário:', error);
+                });
         } else {
             // Se não houver token, redirecione para a página de login
             navigate('/login');
