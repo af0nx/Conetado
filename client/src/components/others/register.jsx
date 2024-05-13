@@ -59,15 +59,15 @@ const Register = () => {
   
           <form onSubmit={handleOnSubmit}>
           <div className="w-full mt-4">
-                  <input className="block w-full px-4 py-2 mt-2 text-gray-200 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="name" placeholder="Nome" aria-label="Name"  value={name} onChange={(e) => setName(e.target.value)} />
+                  <input className="block w-full px-4 py-2 mt-2 text-gray-900 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="name" placeholder="Nome" aria-label="Name"  value={name} onChange={(e) => setName(e.target.value)} />
               </div>
   
               <div className="w-full mt-4">
-                  <input className="block w-full px-4 py-2 mt-2 text-gray-200 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="email" placeholder="Email " aria-label="Email" ovalue={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input className="block w-full px-4 py-2 mt-2 text-gray-900 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="email" placeholder="Email " aria-label="Email" ovalue={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
   
               <div className="w-full mt-4">
-                  <input className="block w-full px-4 py-2 mt-2 text-gray-200 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" aria-label="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <input className="block w-full px-4 py-2 mt-2 text-gray-900 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" aria-label="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
   
               <div className="flex items-center justify-between mt-4">
