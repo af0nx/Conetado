@@ -1,4 +1,3 @@
-
 import React from 'react';
 import logoImg from "../images/logo.png";
 
@@ -25,15 +24,12 @@ const Footer = () => {
         <h6 className='font-medium text-gray-400'>Suporte</h6>
         <ul>
             <li className='py-2 text-sm'><a href="/faq">FAQ</a></li>
-            <li className='py-2 text-sm'><a href="/servicos">Ajuda</a></li>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Conetado</h6>
         <ul>
-            <li className='py-2 text-sm'><a href="/sobre">Sobre</a></li>
             <li className='py-2 text-sm'><a href="/blog">Blog</a></li>
-            <li className='py-2 text-sm'><a href="/servicos">Serviços</a></li>
             <li className='py-2 text-sm'><a href="/parceiros">Parceiros</a></li>
 
         </ul>
@@ -41,8 +37,7 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
-            <li className='py-2 text-sm'><a href="/termosecondicoes">Termos e Condições</a></li>
-            <li className='py-2 text-sm'><a href="/termosdeservicos">Termos de Serviços</a></li>
+            <li className='py-2 text-sm'><a href="/termoscondicoes">Termos e Condições</a></li>
         </ul>
     </div>
       </div>

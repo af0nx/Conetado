@@ -42,6 +42,7 @@ const Logins = () => {
   };
 
   return (
+   <div className='min-h-screen'>
     <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="px-6 py-4">
         <div className="flex justify-center mx-auto">
@@ -96,6 +97,7 @@ const Logins = () => {
       </div>
 
       {error && <p className="text-red-500 text-center">{error}</p>}
+    </div>
     </div>
   );
 };

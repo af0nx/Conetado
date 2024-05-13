@@ -39,83 +39,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-gray-900">
-        <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
-          <div className="relative">
-            <p className="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
-              Add some nice touches to your interface with our latest designs,
-              components, and templates. We've crafted a beautiful user
-              experience that your visitors will love.{" "}
-            </p>
-          </div>
-          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-              <img
-                className="rounded-lg shadow-xl"
-                src="https://cdn.devdojo.com/images/december2020/dashboard-011.png"
-                alt=""
-              ></img>
-            </div>
-            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
-                Drag-n-drop design
-              </p>
-              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Design Made Easy
-              </h3>
-              <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Crafting your user experience has never been easier, with our
-                intuitive drag'n drop interface you will be creating beatiful
-                designs in no time.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-              <img
-                className="rounded-lg shadow-xl"
-                src="https://cdn.devdojo.com/images/december2020/dashboard-04.png"
-                alt=""
-              ></img>
-            </div>
-            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
-              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
-                know your data
-              </p>
-              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Optimized For Conversions
-              </h3>
-              <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Backed by data, these templates have been crafted for ultimate
-                optimization. Now, converting your visitors into customers is
-                easier than ever before.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
-            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-              <img
-                className="rounded-lg shadow-xl"
-                src="https://cdn.devdojo.com/images/december2020/dashboard-03.png"
-                alt=""
-              ></img>
-            </div>
-            <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-              <p className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">
-                Easy to customize
-              </p>
-              <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Make It Your Own
-              </h3>
-              <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                All templates and components are fully customizable. You can use
-                these templates to tell your personal story and convey your
-                message.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
         <div className=" md:p-20 p-7 flex flex-col md:flex-row justify-center items-center md:items-start">
@@ -312,18 +236,17 @@ const Hero = () => {
 
                       <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
                         <p className="text-gray-700 dark:text-gray-300">
-                          Amet praesentium deserunt ex commodi tempore fuga
-                          voluptatem. Sit, sapiente.
+                        O melhor website para quem procura varios gerador de IA!
+
                         </p>
                       </div>
 
                       <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
-                          href="#"
-                          download="/"
+                          href="https://replicate.com/"
                           className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
-                          <span>Download</span>
+                          <span>Visitar</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1em"
@@ -400,18 +323,17 @@ const Hero = () => {
 
                       <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
                         <p className="text-gray-700 dark:text-gray-300">
-                          Amet praesentium deserunt ex commodi tempore fuga
-                          voluptatem. Sit, sapiente.
+                        O melhor website para quem quer comprar o melhor bot de chat!
+
                         </p>
                       </div>
 
                       <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
-                          href="#"
-                          download="/"
+                          href="https://openai.com/index/chatgpt-plus/"
                           className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
-                          <span>Download</span>
+                          <span>Visitar</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1em"
@@ -488,17 +410,16 @@ const Hero = () => {
 
                       <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
                         <p className="text-gray-700 dark:text-gray-300">
-                          Amet praesentium deserunt ex commodi tempore fuga
-                          voluptatem. Sit, sapiente.
+                        Nunca foi tao fácil remover o background de imagens!
+
                         </p>
                       </div>
                       <div className="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
                         <a
-                          href="#"
-                          download="/"
+                          href="https://www.remove.bg/"
                           className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
                         >
-                          <span>Download</span>
+                          <span>Visitar</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1em"

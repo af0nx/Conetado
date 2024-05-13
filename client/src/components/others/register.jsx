@@ -45,6 +45,8 @@ const Register = () => {
     };
 
     return (
+        <div className='min-h-screen'>
+
       <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="px-6 py-4">
           <div className="flex justify-center mx-auto">
@@ -81,7 +83,8 @@ const Register = () => {
   
           <a href="/login" className="mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline">Login</a>
       </div>
-  </div>
+  </div>  </div>
+
     );
   };
   
