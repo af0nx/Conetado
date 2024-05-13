@@ -9,6 +9,9 @@ import Register from "./components/registro";
 import Password from "./components/password";
 import ResetPassword from "./components/resetpassword";
 import Error from "./components/error";
+
+import Sobre from "./components/testeai";
+
 import Dashboard from "./components/dashboard";
 import DashboardProfile from "./components/dashboardprofile";
 import DashboardPromotion from "./components/dashboardpromotion";
@@ -36,6 +39,9 @@ function App() {
       <Route path='/registro' element={<Register />} />
       <Route path='/password' element={<Password />} />
       <Route path='/error' element={<Error />} />
+
+      <Route path='/testeai' element={<Sobre />} />
+
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path="/reset-password/:token" element={<ResetPassword/>} />
       <Route path="/dashboard/perfil" element={<DashboardProfile />} />
