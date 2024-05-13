@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from './common/Navbar';
-import AI from './others/dashboardchatgpt';
+import AI from './others/faq';
 import Footer from './common/Footer';
 
 
-function DashboardAI() {
+function Sobre() {
   return (
     <div className="bg-gray-900">
       <Navbar />
@@ -14,4 +14,4 @@ function DashboardAI() {
   );
 }
 
-export default DashboardAI;
+export default Sobre;
