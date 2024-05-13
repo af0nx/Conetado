@@ -13,6 +13,7 @@ import Dashboard from "./components/dashboard";
 import DashboardProfile from "./components/dashboardprofile";
 import DashboardPromotion from "./components/dashboardpromotion";
 import DashboardAiService from "./components/dashboardaiservices";
+import DashboardImageAi from "./components/dashboardimageai";
 
 
 
@@ -40,6 +41,8 @@ function App() {
       <Route path="/dashboard/perfil" element={<DashboardProfile />} />
      <Route path="/dashboard/servicosai" element={<DashboardAiService />} />
      <Route path="/dashboard/promocoes" element={<DashboardPromotion />} />
+     <Route path="/dashboard/imageai" element={<DashboardImageAi />} />
+
 
 
 

@@ -135,9 +135,11 @@ const DashboardServicos = () => {
   <div className="max-w-md mx-auto mb-8 sm:mb-0 p-8 bg-gray-800 rounded-lg shadow-lg text-center">
     <h1 className="text-3xl font-bold mb-4">ChatGPT</h1>
     <p className="text-md mb-6">O seu bot do dia-a-dia sem tempo de atraso.</p>
-    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-    Clica Aqui  
-    </button>
+    <a href="/dashboard/imageai">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          Clica Aqui
+        </button>
+      </a>
   </div>
   <div className="max-w-md mx-auto mt-8 p-8 bg-gray-800 rounded-lg shadow-lg text-center">
     <h1 className="text-3xl font-bold mb-4">ImageAI</h1>
