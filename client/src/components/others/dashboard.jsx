@@ -11,7 +11,7 @@ const Dashboards = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      // Decodifica o token JWT manualmente para obter o ID do usuário
+      // Decodifica o token JWT manualmente 
       const tokenParts = token.split(".");
       const payload = JSON.parse(atob(tokenParts[1]));
       const userId = payload.userId;
@@ -128,9 +128,26 @@ const Dashboards = () => {
         </div>
       </nav>
       <div className="max-w-[800px] mx-auto text-center flex flex-col justify-center">
-        <h5 className="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-gray-50">
-          Bem-vindo, {userName}!
-        </h5>
+
+        <br /> <br />
+        <div className="max-w-2xl mx-auto text-gray-50 p-6">
+      <h1 className="text-3xl font-bold mb-6 text-center">Bem-vindo ao Dashboard da AI Conetado, {userName}!</h1> <br /> <br />
+      <p className="text-lg mb-4">Navegue pela inteligência artificial de última geração com o Dashboard da AI Conetado. Aqui você terá acesso a uma variedade de recursos e ferramentas para potencializar sua jornada na área da inteligência artificial.</p>
+      <br /> <br /> <br />
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Principais Recursos:</h2>
+        <br /> 
+        <ul className="list-disc pl-6">
+          <li>Explore uma vasta coleção de modelos pré-treinados para diferentes tarefas de aprendizado de máquina, desde classificação até geração de texto.</li>
+          <li>Experimente diferentes algoritmos e hiperparâmetros de forma ágil e eficiente, com nossa interface intuitiva de experimentação.</li>
+          <li>Acompanhe o desempenho dos seus modelos em tempo real, com métricas e visualizações claras e detalhadas.</li>
+          <li>Compartilhe projetos, resultados e insights com colegas de equipe de forma rápida e segura, facilitando a colaboração em projetos de inteligência artificial.</li>
+          <li>Conte com o suporte especializado da equipe da AI Conetado sempre que precisar, para orientações, resolução de problemas e muito mais.</li>
+        </ul>
+      </div>
+      <br /> <br />
+      <p className="text-lg mb-6">Comece já a explorar o futuro da inteligência artificial com o Dashboard da AI Conetado!</p>
+    </div>
       </div>
     </div>
   );

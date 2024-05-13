@@ -14,6 +14,7 @@ import DashboardProfile from "./components/dashboardprofile";
 import DashboardPromotion from "./components/dashboardpromotion";
 import DashboardAiService from "./components/dashboardaiservices";
 import DashboardImageAi from "./components/dashboardimageai";
+import TermsAndConditions from "./components/termosecondicoes";
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path='/error' element={<Error />} />
       <Route path='/servicos' element={<Precos />} />
       <Route path='/parceiros' element={<Parceiro />} />
+      <Route path='/termoscondicoes' element={<TermsAndConditions />} />
       <Route path='/registro' element={<Register />} />
       <Route path='/password' element={<Password />} />
       <Route path='/error' element={<Error />} />
