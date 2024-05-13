@@ -4,12 +4,12 @@ import DashboardProfiles from './others/dashboardprofile';
 import Footer from './common/Footer';
 
 
-function Dashboard() {
+function DashboardProfile() {
   return (
-    <div className="bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <DashboardProfiles />
     </div>
   );
 }
 
-export default Dashboard;
+export default DashboardProfile;

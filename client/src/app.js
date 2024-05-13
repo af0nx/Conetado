@@ -10,9 +10,9 @@ import Password from "./components/password";
 import ResetPassword from "./components/resetpassword";
 import Error from "./components/error";
 import Dashboard from "./components/dashboard";
-import DashboardProfile from "./components/others/dashboardprofile";
-import DashboardPromotion from "./components/others/dashboardprofile";
-import DashboardAiService from "./components/others/dashboardprofile";
+import DashboardProfile from "./components/dashboardprofile";
+import DashboardPromotion from "./components/dashboardpromotion";
+import DashboardAiService from "./components/dashboardaiservices";
 
 
 

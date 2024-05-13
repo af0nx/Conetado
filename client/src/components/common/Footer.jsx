@@ -42,7 +42,7 @@ const Footer = () => {
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
             <li className='py-2 text-sm'><a href="/termosecondicoes">Termos e Condições</a></li>
-            <li className='py-2 text-sm'><a href="/termosdeservicos">Teros de Serviços</a></li>
+            <li className='py-2 text-sm'><a href="/termosdeservicos">Termos de Serviços</a></li>
         </ul>
     </div>
       </div>

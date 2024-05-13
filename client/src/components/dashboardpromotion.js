@@ -4,12 +4,12 @@ import DashboardPromotions from './others/dashboardpromocoes';
 import Footer from './common/Footer';
 
 
-function DashboardPromotions() {
+function DashboardPromotion() {
   return (
-    <div className="bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <DashboardPromotions />
     </div>
   );
 }
 
-export default DashboardPromotions;
+export default DashboardPromotion;

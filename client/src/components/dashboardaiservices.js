@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from './common/Navbar';
-import Dashboards from './others/dashboard';
+import DashboardServices from './others/dashboardservicosai';
 import Footer from './common/Footer';
 
 
-function Dashboard() {
+function DashboardService() {
   return (
-    <div className="bg-gray-900">
-      <Dashboards />
+    <div className=" min-h-screen bg-gray-900">
+      <DashboardServices />
     </div>
   );
 }
 
-export default Dashboard;
+export default DashboardService;
