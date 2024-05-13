@@ -10,6 +10,10 @@ import Password from "./components/password";
 import ResetPassword from "./components/resetpassword";
 import Error from "./components/error";
 import Dashboard from "./components/dashboard";
+import DashboardProfile from "./components/others/dashboardprofile";
+import DashboardPromotion from "./components/others/dashboardprofile";
+import DashboardAiService from "./components/others/dashboardprofile";
+
 
 
 
@@ -33,13 +37,16 @@ function App() {
       <Route path='/error' element={<Error />} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path="/reset-password/:token" element={<ResetPassword/>} />
+      <Route path="/dashboard/perfil" element={<DashboardProfile />} />
+     <Route path="/dashboard/servicosai" element={<DashboardAiService />} />
+     <Route path="/dashboard/promocoes" element={<DashboardPromotion />} />
+
+
+
        
     </Routes>
 
-     // <Route path="/dashboard/perfil" element={<DashboardPerfil />} />
-     // <Route path="/dashboard/servicosai" element={<DashboardServicosAI />} />
-     // <Route path="/dashboard/promocoes" element={<DashboardPromocoes />} />
-     // <Route path="/dashboard/definicoes" element={<DashboardDefinicoes />} />
+
 
 
 
