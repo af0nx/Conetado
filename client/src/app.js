@@ -10,7 +10,7 @@ import Password from "./components/password";
 import ResetPassword from "./components/resetpassword";
 import Error from "./components/error";
 
-import Sobre from "./components/testeai";
+import DashboardAI from "./components/dashboardchatgpt";
 
 import Dashboard from "./components/dashboard";
 import DashboardProfile from "./components/dashboardprofile";
@@ -42,7 +42,7 @@ function App() {
       <Route path='/password' element={<Password />} />
       <Route path='/error' element={<Error />} />
 
-      <Route path='/testeai' element={<Sobre />} />
+      <Route path='/dashboardchatgpt' element={<DashboardAI />} />
 
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path="/reset-password/:token" element={<ResetPassword/>} />

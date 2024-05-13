@@ -76,7 +76,7 @@ const systemMessage = { //  Podemos dizer ao ChatGPT a forma de como queremos qu
 
 return (
 <div className="AI">
-<div style={{ position:"relative", height: "800px", width: "700px"  }}>
+<div style={{ display: "flex", "justify-content": "center"}}>
   <MainContainer>
     <ChatContainer>       
       <MessageList 
