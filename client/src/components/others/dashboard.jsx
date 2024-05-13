@@ -2,25 +2,25 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboards = () => {
-
     const navigate = useNavigate();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
+    const [userId, setUserId] = useState(null);
+
     useEffect(() => {
-      const token = localStorage.getItem('token');
-      if (token) {
-        console.log(token);
-        // Implemente a lógica de verificação do token, por exemplo, decodificando-o e verificando a validade
-        setIsAuthenticated(true);
-      } else {
-        // Se não houver token, redirecione para a página de login
-        navigate('/login');
-      }
-    }, []);
-  
-    if (!isAuthenticated) {
-      return <div>Redirecionando para o login...</div>;
-    }
+        const token = localStorage.getItem('token');
+        if (token) {
+            // Decodifica o token JWT manualmente
+            const tokenParts = token.split('.');
+            const payload = JSON.parse(atob(tokenParts[1]));
+            const userId = payload.userId;
+            console.log(userId); // Exibe o ID do usuário no console
+            setIsAuthenticated(true);
+            setUserId(userId);
+        } else {
+            // Se não houver token, redirecione para a página de login
+            navigate('/login');
+        }
+    }, [navigate]);
 
   return (
     <div className="">
